@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Напишите как заканчивается строчка: Кто не сажал дерева, тому не лежать в...");
         Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        String line = "Кто не сажал дерева, тому не лежать в тени";
-        boolean b1 = line.endsWith(str);
+        System.out.println("Введите первую строчку");
+        String str1 = in.nextLine();
+        System.out.println("Введите вторую строчку");
+        String str2 = in.nextLine();
+        boolean b1 = str1.endsWith(str2);
         if (b1){
-            System.out.println("Всё верно, полностью пословица звучит так: \nКто не сажал дерева, тому не лежать в тени");
+            System.out.println("Всё верно, вторая строка конец первой");
         }
         else{
-            System.out.println("Вы ошиблись попробуйте ещё раз");
+            System.out.println("Нет, вторая строка не конец первой");
         }
     }
 }
